@@ -11,6 +11,11 @@ cask "pollution-tracker" do
 
   app "PollutionTracker.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/PollutionTracker.app"]
+  end
+
   zap trash: [
     "~/Library/Preferences/com.macjul003.PollutionTracker.plist",
     "~/Library/Caches/com.macjul003.PollutionTracker",

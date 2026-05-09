@@ -1,6 +1,6 @@
 cask "pollution-tracker" do
-  version "1.0.0"
-  sha256 "a17754a16f0c600a05716d8e9b8a2a2e0af77aa2b1060d96d6929e64ab932f27"
+  version "1.0.1"
+  sha256 "f9a63b4b21ba9265fedbd64c7fd3ed3f92773a79ea92c626962a664556f2572a"
 
   url "https://github.com/macjul003/PollutionTracker/releases/download/v#{version}/PollutionTracker.zip"
   name "PollutionTracker"
